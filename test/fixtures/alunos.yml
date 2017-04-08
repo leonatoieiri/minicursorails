@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  data_de_nascimento: 2017-04-08
+  turma_id: 1
+  ano_id: 1
+
+two:
+  nome: MyString
+  data_de_nascimento: 2017-04-08
+  turma_id: 1
+  ano_id: 1

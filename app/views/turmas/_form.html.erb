@@ -1,0 +1,32 @@
+<%= form_for(turma) do |f| %>
+  <% if turma.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(turma.errors.count, "error") %> prohibited this turma from being saved:</h2>
+
+      <ul>
+      <% turma.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %>
+    <%= f.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ano_id %>
+    <%= f.number_field :ano_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :limite_de_alunos %>
+    <%= f.number_field :limite_de_alunos %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
